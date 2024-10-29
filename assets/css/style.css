@@ -24,6 +24,10 @@ h1,h2, h3 {
     color:#252525
 }
 
+.hidden-heading {
+    display: none;
+}
+
 
 
 /*header*/
@@ -233,6 +237,30 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+}
+
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    /*no media enquiry needed!*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0,0,0, .6);
+    padding: 15px;
+    text-align: center;
+    /*no wrapping on screens of >400px */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*makes a grid over the image*/
+    border: 2px solid #ffffff
+}
+
+times h3 {
+    /*override earlier rules with specificity*/
+    color: #fafafa;
 }
 
 @media screen and (min-width:1200px) {
